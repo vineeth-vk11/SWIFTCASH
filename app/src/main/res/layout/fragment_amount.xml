@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Amount">
+
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="372dp"
+        android:layout_height="30dp"
+        android:fontFamily="@font/rubik"
+        android:text="Need Cash?"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter how much cash are you looking for?"
+        android:textSize="10sp"
+        android:fontFamily="@font/rubik"
+        app:layout_constraintTop_toTopOf="@+id/textView20"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/cashRequired"
+        app:layout_constraintTop_toTopOf="@+id/textView21"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shaperect3"
+        android:drawableLeft="@drawable/rupeesss"/>
+
+
+    <TextView
+        android:id="@+id/tvUPI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your UPI ID"
+        android:textSize="16sp"
+        android:fontFamily="@font/rubik"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="@+id/cashRequired"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/tvUPIdes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Your UPI ID 9999999999@upi to proceed further"
+        android:textSize="10sp"
+        android:fontFamily="@font/rubik"
+        app:layout_constraintTop_toTopOf="@+id/tvUPI"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/etUPIId"
+        app:layout_constraintTop_toTopOf="@+id/tvUPIdes"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shaperect3"
+        />
+
+    <LinearLayout
+        android:id="@+id/LinearLayou"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/etUPIId"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="PAY (INR)"
+            android:textColor="#000000"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="25dp"
+            android:textSize="40sp"
+            android:textColor="#000000"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/LinearLayou"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="25dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Inc. Fee(INR):"
+            android:textSize="18sp"
+            android:gravity="end"
+            />
+
+        <TextView
+            android:id="@+id/extraMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginLeft="25dp"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="@id/etUPIId"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/arrowforward"
+        android:padding="18dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

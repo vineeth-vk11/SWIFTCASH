@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#4A1257</color>
+    <color name="colorPrimary">#9C27B0</color>
+    <color name="colorAccent">#731D70</color>
+    <color name="color600"> #822478</color>
+    <color name="color500">#8E287E</color>
+    <color name="color400">#9F448F</color>
+    <color name="color200">#C78EBC</color>
+    <color name="color300">#B063A2</color>
+    <color name="colorgrey300">#BDBDBD</color>
+    <color name="colorgrey50">#FAFAFA</color>
+    <color name="colorgrey100">#F5F5F5</color>
+    <color name="colorgrey200">#EEEEEE</color>
+    <color name="colorgrey400">#E0E0E0</color>
+    <color name="bottom_tab_unselected">#979797</color>
+    <color name="logo_purple">#4A1257</color>
+    <color name="logo_pink">#DE246D</color>
+    <color name="logo_orange">#F35A19</color>
+    <color name="colorPrimary1">#E0E0E0</color>
+    <color name="colorPrimaryDark1">#FBB8AC</color>
+    <color name="colorAccent1">#FEDBD0</color>
+    <color name="textColorPrimary">#442C2E</color>
+    <color name="toolbarIconColor">@color/textColorPrimary</color>
+    <color name="loginPageBackgroundColor">#FFFFFF</color>
+    <color name="productGridBackgroundColor">#FFFFFF</color>
+    <color name="textInputOutlineColor">#FBB8AC</color>
+</resources>
