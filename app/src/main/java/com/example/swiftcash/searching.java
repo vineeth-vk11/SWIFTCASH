@@ -29,8 +29,6 @@ public class searching extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_searching, container, false);
-        final Needcash needcash = (Needcash)getActivity();
-       // needcash.change1();
         Button b = view.findViewById(R.id.button6);
         b.setOnClickListener(new View.OnClickListener() {
             @Override

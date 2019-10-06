@@ -29,7 +29,7 @@ public class Amount extends Fragment {
  public View onCreateView(LayoutInflater inflater, ViewGroup container,
  Bundle savedInstanceState) {
   View view = inflater.inflate(R.layout.fragment_amount, container, false);
-  final Needcash needcash = (Needcash)getActivity();
+
   Button b = view.findViewById(R.id.btnContinue);
   b.setOnClickListener(new View.OnClickListener() {
    @Override
@@ -41,7 +41,6 @@ public class Amount extends Fragment {
     fragmentTransaction.commit();
    }
   });
-  //needcash.change();
  return view;
  }
 

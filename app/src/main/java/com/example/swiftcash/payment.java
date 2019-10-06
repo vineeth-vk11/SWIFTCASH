@@ -23,13 +23,11 @@ public class payment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_payment, container, false);
-        // Inflate the layout for this fragment
-        final Needcash needcash = (Needcash)getActivity();
         Button b = view.findViewById(R.id.button5);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Fragment f = new searching();
+                Fragment f = new Details();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fragHolder,f);
